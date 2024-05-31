@@ -2,7 +2,7 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="flex items-center justify-center bg-slate-800 flex-col h-24">
       <div className="text-white">MY SOCIAL MEDIA</div>

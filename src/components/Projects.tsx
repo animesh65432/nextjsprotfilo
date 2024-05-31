@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { projects } from "../temp";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const [index, setIndex] = useState(0);
 
   const goToPrev = () => {

@@ -32,7 +32,7 @@ const skills = [
   { name: "SQL", icon: <SiMysql className="text-blue-500" /> },
 ];
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const [index, setIndex] = useState(0);
 
   const updateBio = () => {

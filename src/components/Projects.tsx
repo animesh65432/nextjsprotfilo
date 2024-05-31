@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../temp";
+import Image from "next/image";
 
 const Projects: React.FC = () => {
   const [index, setIndex] = useState(0);
@@ -23,9 +24,11 @@ const Projects: React.FC = () => {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="max-w-md mx-auto overflow-hidden rounded shadow-lg">
-        <img
+        <Image
           src={projects[index].images}
           alt={projects[index].name}
+          width={800}
+          height={600}
           className="w-full"
         />
         <div className="px-6 py-4">

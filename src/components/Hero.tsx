@@ -10,6 +10,7 @@ import {
 } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiMongodb, SiMysql } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
+import Image from "next/image";
 
 const Myintro = [
   "HELLO, I AM A FRONTEND DEVELOPER",
@@ -49,10 +50,12 @@ const Hero: React.FC = () => {
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-4">
       <div className="text-3xl font-bold mb-4">{Myintro[index]}</div>
       <div className="flex justify-end w-full mb-8">
-        <img
+        <Image
           src="https://media.licdn.com/dms/image/C5603AQGM1y3Y6i8ghg/profile-displayphoto-shrink_800_800/0/1642843600153?e=2147483647&v=beta&t=vG4jE4sJLWpOFFczek_FO3v7PyOsK7QKObVjyJ1T1io"
           alt="Profile"
           className="rounded-full h-32 w-32 border-4 border-white shadow-lg"
+          width={128}
+          height={128}
         />
       </div>
       <div className="mt-8 w-full">
